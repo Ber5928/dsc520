@@ -1,0 +1,69 @@
+---
+title: "DSC520-T301 Week 1"
+author: "Brian Reppeto"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Github Link to my repo 
+
+<https://github.com/Ber5928/hello-world.git>
+
+## Task 3
+
+1.  Discrete
+2.  Nominal
+3.  Ordinal
+4.  Continuous and ratio
+5.  Continuous and ratio
+6.  Categorical and nominal
+7.  Categorical and nominal
+8.  Categorical and binary  
+9.  Categorical and nominal
+10. Continuous and ratio
+
+## Task 4
+
+The measurement error is 6
+
+## Task 5 Plots
+<br>
+<br>
+<br>
+<br>
+
+## Normal Distribution
+```{r Normal, echo=FALSE}
+curve(dnorm, -3.5, 3.5, lwd=2, axes = FALSE, xlab = "", ylab = "")
+axis(1, at = -3:3, labels = c("-3s", "-2s", "-1s", "mean", "1s", "2s", "3s"))
+```
+<br>
+<br>
+
+## Positive Skew
+```{r Positive Skew, echo=FALSE}
+  N <- 10000
+ x <- rnbinom(N, 10, .5)
+ hist(x, 
+ xlim=c(min(x),max(x)), probability=T, nclass=max(x)-min(x)+1, 
+   col='lightblue', xlab=' ', ylab=' ', axes=F,
+   main='Positive Skewed')
+lines(density(x,bw=1), col='red', lwd=3)
+```
+<br>
+<br>
+
+## Negative Skew
+``` {r Negative Skew, echo=FALSE}
+N <- 10000
+x <- rnbinom(N, 10, 0.5)
+x <- max(x) + 1 - x  # Apply inverse transformation
+hist(x, 
+     xlim = c(min(x), max(x)), probability = TRUE, 
+     nclass = max(x) - min(x) + 1, 
+     col = 'lightblue', xlab = ' ', ylab = ' ', axes = FALSE,
+     main = 'Negative Skewed')
+lines(density(x, bw = 1), col = 'red', lwd = 3)
+```
