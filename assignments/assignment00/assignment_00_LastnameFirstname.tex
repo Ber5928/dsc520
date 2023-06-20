@@ -1,0 +1,241 @@
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{xcolor}
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usepackage[sc]{mathpazo}
+\renewcommand{\sfdefault}{lmss}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=2,
+ breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{
+ pdfstartview={XYZ null null 1}}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.75}
+
+\makeatother
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+
+
+
+
+
+
+
+The results below are generated from an R script.
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{# Assignment: ASSIGNMENT 0}
+\hlcom{# Name: Reppeto, Brian}
+\hlcom{# Date: 2023-06-14}
+
+\hlcom{# Basics}
+
+\hlcom{## Add 8 and 5}
+\hlnum{8}\hlopt{+}\hlnum{5}
+\end{alltt}
+\begin{verbatim}
+## [1] 13
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Subtract 6 from 22}
+\hlnum{22}\hlopt{-}\hlnum{6}
+\end{alltt}
+\begin{verbatim}
+## [1] 16
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Multiply 6 by 7}
+\hlnum{6}\hlopt{*}\hlnum{7}
+\end{alltt}
+\begin{verbatim}
+## [1] 42
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Add 4 to 6 and divide the result by 2}
+\hlstd{(}\hlnum{4}\hlopt{+}\hlnum{6}\hlstd{)}\hlopt{/}\hlnum{2}
+\end{alltt}
+\begin{verbatim}
+## [1] 5
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Compute 5 modulo 2}
+\hlnum{5} \hlopt{%%} \hlnum{2}
+\end{alltt}
+\begin{verbatim}
+## [1] 1
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Assign the value 82 to the variable x}
+\hlcom{## Print x}
+\hlstd{x} \hlkwb{<-} \hlnum{82}
+\hlstd{x}
+\end{alltt}
+\begin{verbatim}
+## [1] 82
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Assign the value 41 to the variable y}
+\hlcom{## Print y}
+\hlstd{y} \hlkwb{<-} \hlnum{41}
+\hlstd{y}
+\end{alltt}
+\begin{verbatim}
+## [1] 41
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Assign the output of x + y to the variable z}
+\hlcom{## Print z}
+\hlstd{z} \hlkwb{<-} \hlstd{x} \hlopt{+} \hlstd{y}
+\hlstd{z}
+\end{alltt}
+\begin{verbatim}
+## [1] 123
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Assign the string value "DSC520" to the variable class_name}
+\hlcom{## Print the value of class_name}
+\hlstd{class_name} \hlkwb{<-} \hlstr{'DSC520'}
+\hlstd{class_name}
+\end{alltt}
+\begin{verbatim}
+## [1] "DSC520"
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Assign the string value of TRUE to the variable is_good}
+\hlcom{## Print the value of is_good}
+\hlstd{is_good} \hlkwb{<-} \hlstr{'TRUE'}
+\hlstd{is_good}
+\end{alltt}
+\begin{verbatim}
+## [1] "TRUE"
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Check the class of the variable is_good using the `class()` function}
+\hlkwd{class}\hlstd{(is_good)}
+\end{alltt}
+\begin{verbatim}
+## [1] "character"
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Check the class of the variable z using the `class()` function}
+\hlkwd{class}\hlstd{(z)}
+\end{alltt}
+\begin{verbatim}
+## [1] "numeric"
+\end{verbatim}
+\begin{alltt}
+\hlcom{## Check the class of the variable class_name using the class() function}
+\hlkwd{class}\hlstd{(class_name)}
+\end{alltt}
+\begin{verbatim}
+## [1] "character"
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+The R session information (including the OS info, R version and all
+packages used):
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{sessionInfo}\hlstd{()}
+\end{alltt}
+\begin{verbatim}
+## R version 4.3.0 (2023-04-21)
+## Platform: aarch64-apple-darwin20 (64-bit)
+## Running under: macOS Ventura 13.4
+## 
+## Matrix products: default
+## BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib 
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.11.0
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## time zone: America/New_York
+## tzcode source: internal
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] knitr_1.43
+## 
+## loaded via a namespace (and not attached):
+## [1] compiler_4.3.0 tools_4.3.0    highr_0.10     xfun_0.39      evaluate_0.21
+\end{verbatim}
+\begin{alltt}
+\hlkwd{Sys.time}\hlstd{()}
+\end{alltt}
+\begin{verbatim}
+## [1] "2023-06-13 21:06:57 EDT"
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+
+
+\end{document}
